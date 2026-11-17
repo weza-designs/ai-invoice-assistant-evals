@@ -1,0 +1,196 @@
+[
+  {
+    "id": "clear-en-cement",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Mfano Cafe for 10 bags of Cement 50kg.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "mfano-cafe",
+      "lines": [{ "product": "cement-50kg", "match": ["cement"], "quantity": 10, "unit_price_cents": 75000, "vat_applicable": true }],
+      "total_cents": 870000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-two-lines",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "message": "Bill Tumaini Salon for 2 Paint White 4L and 1 Delivery Fee.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "tumaini-salon",
+      "lines": [
+        { "product": "paint-white-4l", "match": ["white"], "quantity": 2, "unit_price_cents": 180000, "vat_applicable": true },
+        { "product": "delivery-fee", "match": ["delivery"], "quantity": 1, "unit_price_cents": 50000, "vat_applicable": false }
+      ],
+      "total_cents": 467600,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-survey",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "admin",
+    "message": "Create an invoice for Kijiji Builders Ltd: one Site Survey.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "kijiji-builders",
+      "lines": [{ "product": "site-survey", "match": ["survey"], "quantity": 1, "unit_price_cents": 1500000, "vat_applicable": true }],
+      "total_cents": 1740000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-flour-no-vat",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Amani Grocery Store for 50 packets of Maize Flour 2kg.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "amani-grocery-store",
+      "lines": [{ "product": "maize-flour-2kg", "match": ["maize", "flour"], "quantity": 50, "unit_price_cents": 18000, "vat_applicable": false }],
+      "total_cents": 900000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-repair-priced",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Mfano Cafe for a plumbing repair, KES 3,500.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "mfano-cafe",
+      "lines": [{ "product": "plumbing-repair", "match": ["plumbing", "repair"], "quantity": 1, "unit_price_cents": 350000, "vat_applicable": true }],
+      "total_cents": 406000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-nails-and-cement",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "staff",
+    "message": "Invoice Tumaini Salon: 3 Nails 1kg and 4 Cement 50kg.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "tumaini-salon",
+      "lines": [
+        { "product": "nails-1kg", "match": ["nails"], "quantity": 3, "unit_price_cents": 25000, "vat_applicable": true },
+        { "product": "cement-50kg", "match": ["cement"], "quantity": 4, "unit_price_cents": 75000, "vat_applicable": true }
+      ],
+      "total_cents": 435000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-sw-cement",
+    "category": "clear_invoice",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Mfano Cafe kwa mifuko 5 ya Cement 50kg.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "mfano-cafe",
+      "lines": [{ "product": "cement-50kg", "match": ["cement", "saruji", "simenti"], "quantity": 5, "unit_price_cents": 75000, "vat_applicable": true }],
+      "total_cents": 435000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "sw"
+    }
+  },
+  {
+    "id": "clear-sw-flour",
+    "category": "clear_invoice",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Tumaini Salon kwa pakiti 20 za Maize Flour 2kg.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "tumaini-salon",
+      "lines": [{ "product": "maize-flour-2kg", "match": ["maize", "flour", "unga"], "quantity": 20, "unit_price_cents": 18000, "vat_applicable": false }],
+      "total_cents": 360000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "sw"
+    }
+  },
+  {
+    "id": "clear-sheng-paint",
+    "category": "clear_invoice",
+    "language": "sheng",
+    "role": "owner",
+    "message": "Niaje, nitumie invoice ya Kijiji Builders Ltd ya Paint Blue 4L mbili.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "kijiji-builders",
+      "lines": [{ "product": "paint-blue-4l", "match": ["blue"], "quantity": 2, "unit_price_cents": 180000, "vat_applicable": true }],
+      "total_cents": 417600,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "sheng"
+    }
+  },
+  {
+    "id": "clear-en-follow-up-items",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "history": [
+      { "role": "user", "content": "I need to bill Mfano Cafe." },
+      { "role": "assistant", "content": "Sure — what should go on the invoice for Mfano Cafe?" }
+    ],
+    "message": "3 Paint White 20L please.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "mfano-cafe",
+      "lines": [{ "product": "paint-white-20l", "match": ["20"], "quantity": 3, "unit_price_cents": 650000, "vat_applicable": true }],
+      "total_cents": 2262000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-follow-up-price",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "history": [
+      { "role": "user", "content": "Invoice Amani Grocers for a plumbing repair." },
+      { "role": "assistant", "content": "How much should I charge Amani Grocers for the plumbing repair?" }
+    ],
+    "message": "KES 2,000.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "amani-grocers",
+      "lines": [{ "product": "plumbing-repair", "match": ["plumbing", "repair"], "quantity": 1, "unit_price_cents": 200000, "vat_applicable": true }],
+      "total_cents": 232000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "clear-en-delivery-only",
+    "category": "clear_invoice",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Kijiji Building Supplies for 2 Delivery Fee.",
+    "expect": {
+      "outcome": "propose_invoice",
+      "customer": "kijiji-supplies",
+      "lines": [{ "product": "delivery-fee", "match": ["delivery"], "quantity": 2, "unit_price_cents": 50000, "vat_applicable": false }],
+      "total_cents": 100000,
+      "forbid_tools": ["propose_sale"],
+      "reply_language": "en"
+    }
+  }
+]

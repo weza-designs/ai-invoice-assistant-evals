@@ -1,0 +1,140 @@
+[
+  {
+    "id": "ask-price-en-repair",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "note": "Plumbing Repair is price-varies; its usual price must not be used unasked.",
+    "message": "Invoice Mfano Cafe for a plumbing repair.",
+    "expect": { "outcome": "ask", "must_mention": [["plumbing", "repair"]], "reply_language": "en" }
+  },
+  {
+    "id": "ask-price-en-unsaved",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Tumaini Salon for hair dryer servicing.",
+    "expect": { "outcome": "ask", "must_mention": [["hair dryer", "servicing"]], "reply_language": "en" }
+  },
+  {
+    "id": "ask-price-sw-repair",
+    "category": "clarify",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Tumaini Salon ya plumbing repair.",
+    "expect": { "outcome": "ask", "reply_language": "sw" }
+  },
+  {
+    "id": "ask-price-sheng-unsaved",
+    "category": "clarify",
+    "language": "sheng",
+    "role": "owner",
+    "message": "Bro, nibillie Mfano Cafe ya kurekebisha mlango.",
+    "expect": { "outcome": "ask", "reply_language": "sheng" }
+  },
+  {
+    "id": "ask-customer-en-kijiji",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Kijiji for 10 Cement 50kg.",
+    "expect": {
+      "outcome": "ask",
+      "must_mention": [["Kijiji Builders"], ["Kijiji Building Supplies", "Building Supplies"]],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "ask-customer-en-amani",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "message": "Bill Amani for 20 Maize Flour 2kg.",
+    "expect": {
+      "outcome": "ask",
+      "must_mention": [["Amani Grocers"], ["Amani Grocery Store", "Grocery Store"]],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "ask-customer-sw-kijiji",
+    "category": "clarify",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Kijiji ya Site Survey moja.",
+    "expect": {
+      "outcome": "ask",
+      "must_mention": [["Kijiji Builders"], ["Kijiji Building Supplies", "Building Supplies"]],
+      "reply_language": "sw"
+    }
+  },
+  {
+    "id": "ask-customer-sheng-amani",
+    "category": "clarify",
+    "language": "sheng",
+    "role": "owner",
+    "message": "Niaje, tuma invoice kwa Amani ya Delivery Fee moja.",
+    "expect": {
+      "outcome": "ask",
+      "must_mention": [["Amani Grocers"], ["Amani Grocery Store", "Grocery Store"]],
+      "reply_language": "sheng"
+    }
+  },
+  {
+    "id": "ask-product-en-paint",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Mfano Cafe for 2 tins of paint.",
+    "expect": { "outcome": "ask", "must_mention": [["blue"], ["20L", "20 L", "20 litre", "20-litre"]], "reply_language": "en" }
+  },
+  {
+    "id": "ask-product-en-white-paint",
+    "category": "clarify",
+    "language": "en",
+    "role": "owner",
+    "message": "Invoice Kijiji Builders Ltd for 1 white paint.",
+    "expect": {
+      "outcome": "ask",
+      "must_mention": [["4L", "4 L", "4 litre", "4-litre"], ["20L", "20 L", "20 litre", "20-litre"]],
+      "reply_language": "en"
+    }
+  },
+  {
+    "id": "ask-product-sw-paint",
+    "category": "clarify",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Tumaini Salon ya rangi (paint) tatu.",
+    "expect": { "outcome": "ask", "reply_language": "sw" }
+  },
+  {
+    "id": "ask-vat-en-unsaved-service",
+    "category": "clarify",
+    "tags": ["doc-contract"],
+    "language": "en",
+    "role": "owner",
+    "note": "Unsaved item, no VAT intent stated. docs/ai-assistant.md says ask when VAT intent is unclear.",
+    "message": "Invoice Mfano Cafe KES 5,000 for a consultation.",
+    "expect": { "outcome": "ask", "must_mention": [["VAT"]], "reply_language": "en" }
+  },
+  {
+    "id": "ask-vat-en-inclusive-or-not",
+    "category": "clarify",
+    "tags": ["doc-contract"],
+    "language": "en",
+    "role": "owner",
+    "note": "'VAT sorted' does not say whether 11,600 includes VAT or VAT goes on top.",
+    "message": "Bill Tumaini Salon 11,600 for a branding workshop, VAT sorted.",
+    "expect": { "outcome": "ask", "must_mention": [["VAT"]], "reply_language": "en" }
+  },
+  {
+    "id": "ask-vat-sw-unsaved-service",
+    "category": "clarify",
+    "tags": ["doc-contract"],
+    "language": "sw",
+    "role": "owner",
+    "message": "Tengeneza ankara ya Amani Grocers ya ushauri KES 8,000.",
+    "expect": { "outcome": "ask", "must_mention": [["VAT", "kodi", "ushuru"]], "reply_language": "sw" }
+  }
+]

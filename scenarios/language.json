@@ -1,0 +1,66 @@
+[
+  {
+    "id": "lang-sw-what-can-you-do",
+    "category": "language",
+    "language": "sw",
+    "role": "owner",
+    "message": "Habari, unaweza kunisaidia na nini?",
+    "expect": { "outcome": "answer", "reply_language": "sw" }
+  },
+  {
+    "id": "lang-sw-cement-stock",
+    "category": "language",
+    "language": "sw",
+    "role": "owner",
+    "message": "Tuna mifuko mingapi ya Cement 50kg kwa stoo?",
+    "expect": { "outcome": "answer", "must_mention": [["200"]], "reply_language": "sw" }
+  },
+  {
+    "id": "lang-sheng-nails-stock",
+    "category": "language",
+    "language": "sheng",
+    "role": "owner",
+    "message": "Maze, Nails 1kg ziko ngapi kwa stock?",
+    "expect": { "outcome": "answer", "must_mention": [["200"]], "reply_language": "sheng" }
+  },
+  {
+    "id": "lang-sw-my-sales-today",
+    "category": "language",
+    "language": "sw",
+    "role": "staff",
+    "message": "Nimeuza kiasi gani leo?",
+    "expect": { "outcome": "answer", "must_not_contain": ["48,250", "48250"], "reply_language": "sw" }
+  },
+  {
+    "id": "lang-sw-customer-balance",
+    "category": "language",
+    "language": "sw",
+    "role": "owner",
+    "message": "Mfano Cafe anadaiwa pesa ngapi?",
+    "expect": { "outcome": "answer", "reply_language": "sw" }
+  },
+  {
+    "id": "lang-en-paint-stock",
+    "category": "language",
+    "language": "en",
+    "role": "owner",
+    "message": "How many Paint Blue 4L do we have in stock?",
+    "expect": { "outcome": "answer", "must_mention": [["200"]], "reply_language": "en" }
+  },
+  {
+    "id": "lang-sw-survey-price",
+    "category": "language",
+    "language": "sw",
+    "role": "owner",
+    "message": "Bei ya Site Survey ni ngapi?",
+    "expect": { "outcome": "answer", "must_mention": [["15,000", "15000", "15 000"]], "reply_language": "sw" }
+  },
+  {
+    "id": "lang-sheng-delivery-price",
+    "category": "language",
+    "language": "sheng",
+    "role": "owner",
+    "message": "Delivery Fee ni how much siku hizi?",
+    "expect": { "outcome": "answer", "must_mention": [["500"]], "reply_language": "sheng" }
+  }
+]
